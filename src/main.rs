@@ -1,5 +1,4 @@
 #[derive(Debug)] // Derive the Debug trait for LemonadeTransaction
-
 struct LemonadeTransaction {
     id: String,
     buyer_wallet_address: String,
@@ -10,9 +9,10 @@ struct LemonadeTransaction {
     time_of_transaction: String,
 }
 
+
 fn main() {
-    let transaction = handle_lemonade_transaction();
-    println!("Little Timmy Sold a Lemonade: {:?}", transaction); 
+    let first_transaction = handle_lemonade_transaction();
+    println!("Little Timmy Sold a Lemonade: {:?}", first_transaction); 
 }
 
 fn handle_lemonade_transaction() -> LemonadeTransaction {
